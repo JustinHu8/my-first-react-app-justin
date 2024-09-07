@@ -5,17 +5,9 @@ import CourseCard from './components/CourseCard/CourseCard';
 function App() {
   return (
     <div className="App">
-      <CourseCard 
-        title="React for Beginners" 
-        instructor="John Doe" 
-        isEnrolled={false} 
-        rating={4.5}
-      />
-      <CourseCard 
-        title="Advanced JavaScript" 
-        instructor="Jane Smith" 
-        isEnrolled={true} 
-      />
+      <CourseCard title="React for Beginners" description="Learn the basics of React." lessons={10} />
+      <CourseCard title="Advanced JavaScript" description="Deep dive into JS." lessons={12} />
+      <CourseCard title="TypeScript Fundamentals" description="Understanding TypeScript in depth." lessons={8} />
 
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
